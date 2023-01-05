@@ -1,4 +1,4 @@
-remote_theme: amitmerchant1990/reverie
+remote_theme: pages-themes/primer
 
 plugins:
 - jekyll-remote-theme

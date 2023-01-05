@@ -1,1 +1,1 @@
-hello
+hello {{ page.layout }}

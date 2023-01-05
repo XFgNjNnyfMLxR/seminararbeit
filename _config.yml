@@ -3,5 +3,7 @@
 # remote_theme: daattali/beautiful-jekyll
 # remote_theme: pages-themes/primer
 
+permalink: pretty
+
 plugins:
 - jekyll-redirect-from

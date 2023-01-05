@@ -1,3 +1,3 @@
 ---
-redirect_from: quellen
+redirect_from: inhalt
 ---

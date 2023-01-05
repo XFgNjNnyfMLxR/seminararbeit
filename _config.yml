@@ -1,8 +1,7 @@
 # remote_theme: alshedivat/al-folio
-
 # remote_theme: poole/lanyon (not working with remote_theme reather fork)
 # remote_theme: daattali/beautiful-jekyll
 # remote_theme: pages-themes/primer
 
 plugins:
-- jekyll-remote-theme
+- jekyll-redirect-from

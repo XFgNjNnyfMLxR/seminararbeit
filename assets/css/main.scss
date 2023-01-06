@@ -1,5 +1,10 @@
 ---
 ---
 
-@import "default";
+@import "theme/default";
+
+@import "base";
+@import "animation";
+@import "main";
+
 @import "page/home";

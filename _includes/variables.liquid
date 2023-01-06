@@ -1,0 +1,21 @@
+{% capture title %}
+  {%- if page.title -%}
+    {{ page.title }}
+  {%- elsif page.url == "/" -%}
+    {{ site.title }}
+  {%- else -%}
+    {{ page.name | split: "." | pop | join }} ─ {{ site.title }}
+  {%- endif -%}
+{% endcapture %}
+
+{% capture description %}
+  {%- if page.description -%}
+    {{ page.description }}
+  {%- elsif site.description -%}
+    {{ site.description }}
+  {%- else -%}
+    {{ page.content | strip_html | xml_escape | truncatewords: 30 }}
+  {%- endif -%}
+{% endcapture %}
+
+{% assign author = site.author | default: site.github.owner_name %}

@@ -1,3 +1,5 @@
 ---
-redirect_from: quellen
+redirect_from: 
+- quellen
+- sources.md
 ---

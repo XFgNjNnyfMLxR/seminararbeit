@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ include.title }}<title>
+<meta name="author" content="{{ author }}">
+<meta name="copyright" content="{{ author }}">
+<meta name="publisher" content="{{ author }}">
+<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+<meta name="language" property="og:locale" content="de_DE">
+<meta name="description" property="og:description" content="{{ include.description }}">
+
+{%- unless site.keywords == empty -%}
+<meta name="keywords" content="{{ site.keywords | join: ', ' }}">
+{%- endunless -%}
+
+<meta property="og:type" content="WebSite">
+<meta property="og:url" content="{{ site.url }}{{ include.path }}">
+<meta property="og:title" content="{{ include.title }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:image" content="">
+<meta property="og:image:alt" content="">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="">
+<meta property="og:image:height" content="">
+
+<meta property="twitter:title" content="{{ include.title }}">
+<meta property="twitter:description" content="{{ include.description }}">
+<meta property="twitter:card" content="summary">
+<meta property="twitter:image" content="">
+<meta property="twitter:image:alt" content="">
+
+<link rel="canonical" href="{{ site.url }}{{ include.path }}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "headline": "{{ include.title }}",
+  "description": "{{ include.description }}",
+  "url": "{{ site.url }}{{ include.path }}"
+}
+</script>

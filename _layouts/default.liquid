@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="de-DE">
   {% include_cached cache/head.liquid title=title path=page.url description=description %}
-  <body id="{{ page.id | replace: '/', '-' }}">
+  <body id="{{ page.dir | replace: '/', '-' }}">
     {{ content }}
   </body>
 </html>

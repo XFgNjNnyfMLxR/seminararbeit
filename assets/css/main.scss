@@ -1,10 +1,4 @@
 ---
 ---
 
-@import "theme/default";
-
-@import "base";
-@import "animation";
-@import "default";
-
-@import "page/home";
+@import 'base', 'animations', 'themes', 'layout', 'pages';

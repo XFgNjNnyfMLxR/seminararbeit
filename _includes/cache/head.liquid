@@ -10,7 +10,8 @@
   <meta name="generator" content="Jekyll v{{ jekyll.version }}">
   <meta name="language" property="og:locale" content="de_DE">
   <meta name="description" property="og:description" content="{{ include.description }}">
-
+  <meta name="theme-color" content="{{ site.theme-color }}">
+  
   {%- unless site.keywords == empty -%}
   <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
   {%- endunless -%}
@@ -18,8 +19,8 @@
   <meta property="og:type" content="WebSite">
   <meta property="og:url" content="{{ site.url }}{{ include.path }}">
   <meta property="og:title" content="{{ include.title }}">
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:image" content="assets/favicon/100.png">
+  <meta property="og:site_name" content="{{ site.github.owner_name | capitalize }}">
+  <meta property="og:image" content="/assets/favicon/100.png">
   <meta property="og:image:alt" content="propaganda icon">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="100">
@@ -28,16 +29,16 @@
   <meta property="twitter:title" content="{{ include.title }}">
   <meta property="twitter:description" content="{{ include.description }}">
   <meta property="twitter:card" content="summary">
-  <meta property="twitter:image" content="assets/favicon/100.png">
+  <meta property="twitter:image" content="/assets/favicon/100.png">
   <meta property="twitter:image:alt" content="propaganda icon">
 
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/32.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon/64.png">
-  <link rel="icon" type="image/png" sizes="100x100" href="assets/favicon/100.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/100.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon/64.png">
+  <link rel="icon" type="image/png" sizes="100x100" href="/assets/favicon/100.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/100.png">
 
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="canonical" href="{{ site.url }}{{ include.path }}">
 
   <script type="application/ld+json">

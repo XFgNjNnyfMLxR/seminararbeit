@@ -1,6 +1,8 @@
+{% include variables.liquid %}
+
 <!doctype html>
 <html lang="de_DE">
-  {% include head.liquid %}
+  {% include_cached cache/head.liquid title=title path=page.url description=description %}
   <body>
     {{ content }}
   </body>

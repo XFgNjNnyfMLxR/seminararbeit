@@ -1,6 +1,8 @@
 ---
 redirect_delay: 18
-redirect_from: inhalt
+redirect_from: 
+- inhalt
+- inhalt/
 ---
 
 # H1

@@ -1,5 +1,7 @@
 * {
     @extend %no_spacing;
+    font-weight: normal;
+    letter-spacing: .15px;
 }
 
 ::-webkit-scrollbar {
@@ -16,11 +18,16 @@ html {
 
 body {
     @include size(100%);
+    -webkit-text-size-adjust: 100%;
 }
 
 a {
     color: #268bd2;
     text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 #inner {
@@ -34,7 +41,8 @@ br {
 }
 
 h1, h2, h3, h4 {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .15);
+    font-family: css_var(h1-font-family);
 }
 
 h1 {
@@ -57,7 +65,10 @@ em {
     color: #9a9a9a;
 }
 
-::-moz-selection,
+::-moz-selection {
+    background: #2b4b6d;
+}
+
 ::selection {
     background: #2b4b6d;
 }

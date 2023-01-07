@@ -45,18 +45,18 @@
       font-weight: bold;
       letter-spacing: .6px;
       margin-left: 8px;
-      background: none;
-      transition-property: background;
+      background-color: none;
+      transition-property: background-color;
       transition-duration: 1s;
       transition-timing-function: ease-out;
       transition-delay: 0.6s;
       
       &:hover {
         text-decoration: none;
-        transition-property: background;
+        transition-property: background-color;
         transition-duration: 1s;
 
-        background: linear-gradient(45deg, #b1bac1c2, #616d9126);
+        background-color: linear-gradient(45deg, #b1bac1c2, #616d9126);
         box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, .05);
       }
     }

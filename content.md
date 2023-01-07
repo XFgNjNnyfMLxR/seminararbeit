@@ -1,4 +1,4 @@
 ---
-redirect_delay: 20
+redirect_delay: 18
 redirect_from: inhalt
 ---

@@ -1,3 +1,7 @@
+* {
+    @extend %no_spacing;
+}
+
 ::-webkit-scrollbar {
     @extend %display_none;
 }
@@ -7,12 +11,23 @@ html {
     
     overflow-x: hidden;
     scroll-behavior: smooth;
+    font-family: css_var(default-font-family);
 }
 
 body {
-    @extend %no_spacing;
-    
-    height: 100%;
+    @include size(100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+#inner {
+    @extend %auto_side_margin;
+}
+
+p {
+    font-family: css_var(p-font-family);
 }
 
 /*

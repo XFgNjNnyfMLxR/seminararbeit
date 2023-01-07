@@ -26,11 +26,11 @@
   
   ul {
     width: fit-content;
-    @extend $auto_side_margin;
+    @extend %auto_side_margin;
   }
   
   li {
-    @extend $no_select;
+    @extend %no_select;
     
     list-style-image: icon(dash);
     padding-inline-start: 1ch;

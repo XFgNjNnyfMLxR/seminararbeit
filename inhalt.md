@@ -1,10 +1,3 @@
----
-redirect_delay: 18
-redirect_from: 
-- inhalt
-- inhalt/
----
-
 # H1
 ## H2
 ### H3

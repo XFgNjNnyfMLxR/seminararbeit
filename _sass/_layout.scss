@@ -53,6 +53,11 @@ em {
     color: #9a9a9a;
 }
 
+::-moz-selection,
+::selection {
+    background: #2b4b6d;
+}
+
 /*
 h1
 h2

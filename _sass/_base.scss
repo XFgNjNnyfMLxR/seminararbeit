@@ -60,7 +60,11 @@
 }
 
 @function css_var($name, $fallback: null) {
-  @return var("--#{$name}", $fallback);
+  @if ($fallback != null) {
+    @return var(--#{$name}, $fallback);
+  } @else {
+    @return var(--#{$name});
+  }
 }
 
 @function icon($name) {

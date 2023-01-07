@@ -47,23 +47,12 @@
       padding: 6px;
       border-radius: 7px;
       background-color: unset;
-      /*
-      transition-property: background-color;
-      transition-duration: 1s;
-      transition-timing-function: ease-out;
-      transition-delay: 0.6s;
-      */
       transition: background-color 1s ease-out 0.6s;
       
       &:hover {
         text-decoration: none;
         transition: background-color 1s ease unset;
-        /*
-        transition-property: background-color;
-        transition-duration: 1s;
-        ransition-delay: unset;
-        */
-        background-color: linear-gradient(45deg, #b1bac1c2, #616d9126);
+        background-color: #4b4e5042;
         box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, .05);
       }
     }

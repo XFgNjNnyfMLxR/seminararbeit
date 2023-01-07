@@ -48,6 +48,10 @@
   }
 }
 
+%no_select {
+  @include vendors(user-select, none, webkit);
+}
+
 @mixin to_css_vars($mapping) {
   @each $name, $value in $mapping {
     #{'--' + $name}: $value;

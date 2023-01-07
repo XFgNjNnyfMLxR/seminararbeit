@@ -3,33 +3,33 @@
   
   background: css_var(home-background);
   background-blend-mode: darken;
-}
 
-h1 {
-  font-size: 60px;
-}
+  h1 {
+    font-size: 60px;
+  }
 
-h2 {
-  font-size: 33px;
-}
+  h2 {
+    font-size: 33px;
+  }
 
-p {
-  font-size: 20px;
-  line-height: 1.5:
-}
+  p {
+    font-size: 20px;
+    line-height: 1.5:
+  }
 
-li {
-  list-style-image: icon(dash);
-  padding-inline-start: 1ch;
-  padding: 6px;
-  width: fit-content;
-  margin-bottom: 12px;
-  
-  a {
-    font-size: 17px;
-    
-    &:hover {
-      background: grey;
+  li {
+    list-style-image: icon(dash);
+    padding-inline-start: 1ch;
+    padding: 6px;
+    width: fit-content;
+    margin-bottom: 12px;
+
+    a {
+      font-size: 17px;
+
+      &:hover {
+        background: grey;
+      }
     }
   }
 }

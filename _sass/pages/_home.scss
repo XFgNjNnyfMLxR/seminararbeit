@@ -16,7 +16,12 @@
     font-size: 20px;
     line-height: 1.5:
   }
-
+  
+  ul {
+    width: fit-content;
+    @extend $auto_side_margin;
+  }
+  
   li {
     list-style-image: icon(dash);
     padding-inline-start: 1ch;

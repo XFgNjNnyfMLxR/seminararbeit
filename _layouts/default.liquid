@@ -1,7 +1,7 @@
 {% include variables.liquid %}
 
 <!doctype html>
-<html id="{{ id }}" lang="de-DE">
+<html class="theme-{{ theme }}" id="{{ id }}" lang="de-DE">
   {% include_cached cache/head.liquid title=title path=page.url description=description %}
   <body>
     {{ content }}

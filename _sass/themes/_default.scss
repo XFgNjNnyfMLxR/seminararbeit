@@ -1,5 +1,10 @@
 $theme-default: (
-  "font-family": "PT Serif"\, Georgia\, "Times New Roman"\, serif,
+  "default-font-family": "PT Serif"\, Georgia\, "Times New Roman"\, serif,
+  "h1-font-family": "PT Serif"\, Georgia\, "Times New Roman"\, serif,
+  "h2-font-family": "PT Serif"\, Georgia\, "Times New Roman"\, serif,
+  "h3-font-family": "PT Serif"\, Georgia\, "Times New Roman"\, serif,
+  "h4-font-family": "PT Serif"\, Georgia\, "Times New Roman"\, serif,
+  "p-font-family": "PT Sans"\, Helvetica\, Arial\, sans-serif,
   "home-background": image(background, svg) center / cover repeat fixed border-box border-box #e1edf217
 );
 

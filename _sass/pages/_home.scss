@@ -1,5 +1,6 @@
 #home {
-  background: css_var(home-background);
-  
   owerflow: hidden;
+  
+  background: css_var(home-background);
+  background-blend-mode: darken;
 }

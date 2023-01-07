@@ -4,6 +4,13 @@
   background: css_var(home-background);
   background-blend-mode: darken;
 
+  #inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
   h1 {
     font-size: 60px;
   }

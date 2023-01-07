@@ -39,7 +39,9 @@
 }
 
 @mixin with-vendors($vendors) {
-  @each $property, $value in @content {
+  $mapping: @content
+    
+  @each $property, $value in $mapping {
     #{$property}: $value;
     
     @each $vendor in $vendors {

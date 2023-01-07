@@ -1,13 +1,6 @@
 $theme-default: (
-  "default-font-family": "PT Serif"\, Georgia\, "Times New Roman"\, serif,
-  "h1-font-family": "PT Sans"\, Helvetica\, Arial\, sans-serif,
-  "h2-font-family": "PT Sans"\, Helvetica\, Arial\, sans-serif,
-  "h3-font-family": "PT Sans"\, Helvetica\, Arial\, sans-serif,
-  "h4-font-family": "PT Sans"\, Helvetica\, Arial\, sans-serif,
-  "p-font-family": "PT Serif"\, Georgia\, "Times New Roman"\, serif,
   "home-background": image(background, svg) center / cover repeat fixed border-box border-box #e1edf217
 );
-
 
 :root, .theme-default {
   @include to_css_vars($theme-default);

@@ -33,11 +33,7 @@
   <meta property="twitter:image" content="/assets/favicon/100.png">
   <meta property="twitter:image:alt" content="propaganda icon">
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/32.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon/64.png">
-  <link rel="icon" type="image/png" sizes="100x100" href="/assets/favicon/100.png">
-  <link rel="apple-touch-icon" sizes="100x100" href="/assets/favicon/100.png">
+  {% include_cached cache/favicon.liquid %}
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="canonical" href="{{ site.url }}{{ include.path }}">

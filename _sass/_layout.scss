@@ -1,3 +1,17 @@
 ::-webkit-scrollbar {
-    display: none
+    @extend %display_none;
+}
+
+html {
+    @include size(100%);
+    
+    margin: 0;
+    padding: 0;
+    
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
 }

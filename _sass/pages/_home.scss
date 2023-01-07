@@ -34,24 +34,23 @@
     @extend %no_select;
     
     list-style-type: '─';
-    padding-inline-start: 1ch;
+    padding-inline-start: 14px;
 
     width: fit-content;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 
     a {
       font-size: 20px;
       font-weight: bold;
       letter-spacing: .6px;
-      margin-left: 8px;
       padding: 6px;
       border-radius: 7px;
       background-color: unset;
-      transition: background-color 1s ease-out 0.6s;
+      transition: background-color 1s ease-out;
       
       &:hover {
         text-decoration: none;
-        transition: background-color 1s ease unset;
+        transition: background-color 1s ease;
         background-color: #4b4e5042;
         box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, .05);
       }

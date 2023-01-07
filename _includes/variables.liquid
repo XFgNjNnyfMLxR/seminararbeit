@@ -19,5 +19,5 @@
 {% endcapture %}
 
 {% assign author = site.author | default: site.github.owner_url %}
-{% assign theme = page.theme | default: site.theme | default: "default" %}
+{% assign theme = page.css_theme | default: site.css_theme | default: "default" %}
 {% assign id = page.url | remove_first: '/' | split: '/' | default: 'home' | join: '-' | replace: '.', '-' %}

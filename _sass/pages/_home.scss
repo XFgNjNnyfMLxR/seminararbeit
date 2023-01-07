@@ -30,6 +30,8 @@
   }
   
   li {
+    @extend $no_select;
+    
     list-style-image: icon(dash);
     padding-inline-start: 1ch;
     padding: 6px;

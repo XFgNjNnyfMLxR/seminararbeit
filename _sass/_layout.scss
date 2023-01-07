@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    @extend no_spacing;
+    @extend %no_spacing;
     
     height: 100%;
 }

@@ -43,6 +43,12 @@
   }
 }
 
+@mixin to_css_vars($mapping) {
+  @each $name, $value in $mapping {
+    #{'--' + $name}: $value;
+  }
+}
+
 @mixin with-vendors($mapping, $vendors) {
   @each $property, $value in $mapping {
     #{$property}: $value;
@@ -51,6 +57,10 @@
       #{'-' + $vendor + '-' + $property}: $value;
     }
   }
+}
+
+@function css_var($name) {
+  @return var("--#{$name}")
 }
 
 @function google_font($query) {

@@ -30,7 +30,7 @@ a {
 }
 
 br {
-    @extend $no_select;
+    @extend %no_select;
 }
 
 h1, h2, h3, h4 {

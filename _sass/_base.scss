@@ -60,7 +60,11 @@
 }
 
 @function css_var($name, $fallback: null) {
-  @return var("--#{$name}", $fallback)
+  @return var("--#{$name}", $fallback);
+}
+
+@function icon($name) {
+  @return url("/assets/icons/#{$name}.svg") 
 }
 
 @function google_font($query) {

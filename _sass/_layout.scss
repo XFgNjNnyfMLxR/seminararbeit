@@ -24,10 +24,21 @@ a {
 
 #inner {
     @extend %auto_side_margin;
+    
+    max-width: 1100px; /* TODO: media support */
+}
+
+h1 {
+    color: #303030;
+}
+
+h2 {
+    color: #505050;
 }
 
 p {
     font-family: css_var(p-font-family);
+    color: #1b1717;
 }
 
 /*

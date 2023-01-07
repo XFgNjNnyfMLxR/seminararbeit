@@ -1,0 +1,19 @@
+<!doctype html>
+<html id="redirect" lang="de-DE">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="{{ page.redirect_delay }}; url={{ page.redirect.to }}">
+    <title>Redirecting</title>
+    <link rel="canonical" href="{{ page.redirect.to }}">
+    <script>location="{{ page.redirect.to }}"</script>
+    
+    {% include_cached cache/favicon.liquid %}
+  </head>
+  <body>
+    <div id="inner">
+      <h1>Redirecting</h1>
+      <a href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
+    </div>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
-    <meta http-equiv="refresh" content="{{ page.redirect_delay | default: 0 }}; url={{ page.redirect.to }}">
+    <meta http-equiv="refresh" content="{{ page.redirect_delay | default: 20 }}; url={{ page.redirect.to }}">
     <title>Redirecting</title>
     <link rel="canonical" href="{{ page.redirect.to }}">
     <script>location="{{ page.redirect.to }}"</script>

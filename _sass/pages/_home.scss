@@ -1,18 +1,15 @@
 #home {
-  overflow: hidden;
-  
   background: css_var(home-background);
-  background-blend-mode: darken;
 
   #inner {
     height: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
   
   h1 {
-    font-size: 68px;
+    font-size: 57px;
   }
 
   h2 {
@@ -33,26 +30,25 @@
   li {
     @extend %no_select;
     
+    width: fit-content;
+    margin-bottom: 30px;
     list-style-type: '─';
     padding-inline-start: 14px;
 
-    width: fit-content;
-    margin-bottom: 30px;
-
     a {
+      padding: 6px;
       font-size: 18px;
       font-weight: bold;
       letter-spacing: .6px;
-      padding: 6px;
       border-radius: 7px;
       background-color: unset;
       transition: background-color 1s ease-out;
       
       &:hover {
         text-decoration: none;
-        transition: background-color 0.7s ease;
         background-color: #687a8642;
         box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .05);
+        transition: background-color 0.7s ease;
       }
     }
   }

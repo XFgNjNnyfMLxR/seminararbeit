@@ -1,1 +1,53 @@
+%display_none {
+  display: none
+}
 
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin on-event {
+  &:hover,
+  &:active,
+  &:focus {
+      @content;
+  }
+}
+
+@mixin with-events {
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+      @content;
+  }
+}
+
+@mixin qualify($selector) {
+  @at-root #{$selector + &} {
+    @content;
+  }
+}
+
+@mixin vendors($property, $value, $vendors) {
+  #{$property}: $value;
+  
+  @each $vendor in $vendors {
+    #{'-' + $vendor + '-' + $property}: $value;
+  }
+}
+
+@mixin with-vendors($vendors) {
+  @each $property, $value in @content {
+    #{$property}: $value;
+    
+    @each $vendor in $vendors {
+      #{'-' + $vendor + '-' + $property}: $value;
+    }
+  }
+}
+
+@function google_font($query) {
+  @return url("https://fonts.googleapis.com/css?family=#{query}") 
+}

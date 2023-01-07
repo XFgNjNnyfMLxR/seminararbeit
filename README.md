@@ -15,7 +15,7 @@ Aufgrund des aktullen Angriffkrieges Putins auf die Urkaine (Stand: Jan 2023) wu
 - [Download][download_page]
 
 
-[table_page]: /seite/3.md
-[content_page]: /seite/1.md
+[table_page]: /seite
+[content_page]: /seite
 [sources_page]: /quellen.md
 [download_page]: /download.md

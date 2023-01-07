@@ -24,17 +24,18 @@
   ul {
     margin-top: 15px;
     width: fit-content;
+    
     @extend %auto_side_margin;
   }
   
   li {
-    @extend %no_select;
-    
     width: fit-content;
     margin-bottom: 30px;
     list-style-type: '─';
     padding-inline-start: 14px;
-
+    
+    @extend %no_select;
+    
     a {
       padding: 6px;
       font-size: 18px;

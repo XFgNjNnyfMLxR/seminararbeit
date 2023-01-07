@@ -32,20 +32,29 @@
   li {
     @extend %no_select;
     
-    list-style-image: icon(dash);
+    border-radius: 7px;
+    list-style-type: '─':
     padding-inline-start: 1ch;
     padding: 6px;
     width: fit-content;
     margin-bottom: 12px;
-
+    transition background 1s ease 0.5;
+    transition box-shadow 0.9s ease 0.5;
+    
     a {
       font-size: 20px;
       font-weight: bold;
       letter-spacing: .6px;
       
       &:hover {
-        background: grey;
+        text-decoration: none;
       }
     }
+    
+    &:hover {
+      transition background 1s ease;
+      transition box-shadow 1.1s ease;
+      background: linear-gradient(45deg, #b1bac1c2, #616d9126);
+      box-shadow: 2px 2px 25px 3px rgba(0,0,0,0.2);
   }
 }

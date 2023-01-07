@@ -1,19 +1,20 @@
 <!doctype html>
-<html id="redirect" lang="de-DE">
+<html class="theme-default" id="redirect" lang="de-DE">
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
-    <meta http-equiv="refresh" content="20; url={{ page.redirect.to }}">
-    <title>Redirecting</title>
+    <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+    <title>Weiterleitung</title>
     <link rel="canonical" href="{{ page.redirect.to }}">
-    <!-- <script>location="{{ page.redirect.to }}"</script> -->
+    <script>location="{{ page.redirect.to }}"</script>
     
     {% include_cached cache/favicon.liquid %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   </head>
   <body>
     <div id="inner">
-      <h1>Redirecting {{ page.redirect_delay | default: 20 }} {{ site.css_theme }}</h1>
-      <a href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
+      <h1>Weiterleitung</h1>
+      <p>Diese Seite sollte sie Weiterleiten, clicken sie <a href="{{ page.redirect.to }}">hier</a> wenn dies nicht passiert ist.</p>
     </div>
   </body>
 </html>

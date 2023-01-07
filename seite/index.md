@@ -1,3 +1,3 @@
 ---
-redirect_to: "seite/1"
+redirect_to: "/seite/1"
 ---

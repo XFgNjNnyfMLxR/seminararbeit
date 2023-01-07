@@ -1,10 +1,12 @@
+{% assign page_name = page.name | split: "." | pop | join: '.' %}
+
 {% capture title %}
   {%- if page.title -%}
     {{ page.title }}
   {%- elsif page.url == "/" -%}
     {{ site.title }}
   {%- else -%}
-    {{ page.name | split: "." | pop | join | capitalize }} ─ {{ site.title }}
+    {{ page_name | capitalize }} ─ {{ site.title }}
   {%- endif -%}
 {% endcapture %}
 

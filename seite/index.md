@@ -1,3 +1,3 @@
 ---
-redirect_to: eins
+redirect_to: "1"
 ---

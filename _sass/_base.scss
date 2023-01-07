@@ -59,8 +59,8 @@
   }
 }
 
-@function css_var($name) {
-  @return var("--#{$name}")
+@function css_var($name, $fallback: null) {
+  @return var("--#{$name}", $fallback)
 }
 
 @function google_font($query) {

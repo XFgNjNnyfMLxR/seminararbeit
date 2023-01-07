@@ -67,6 +67,10 @@
   @return url("/assets/icons/#{$name}.svg") 
 }
 
+@function image($name, $type: png) {
+  @return url("/assets/images/#{$name}.#{$type}") 
+}
+
 @function google_font($query) {
   @return url("https://fonts.googleapis.com/css?family=#{query}") 
 }

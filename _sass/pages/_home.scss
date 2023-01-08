@@ -3,6 +3,10 @@
     justify-content: center;
   }
   
+  h2 {
+    margin-bottom: 0;
+  }
+  
   ul {
     @extend %auto_side_margin;
     

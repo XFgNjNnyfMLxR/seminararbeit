@@ -8,7 +8,6 @@ Aufgrund des aktullen Angriffkrieges Putins auf die Urkaine (Stand: Jan 2023) wu
 <br>
 <br>
 <br>
-
 - [Verzeichnis][table_page]
 - [Inhalt][abstract_page]
 - [Quellen][sources_page]

@@ -1,1 +1,1 @@
-*Hier werden die quellen stehen sobald die Seminararbeit geschreiben wurde.*
+*Hier werden die quellen separat stehen sobald die Seminararbeit geschreiben wurde.*

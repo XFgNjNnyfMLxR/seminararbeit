@@ -25,7 +25,7 @@
   
 [guide](https://www.markdownguide.org/cheat-sheet/#extended-syntax)
 
-![alt text](image.jpg)
+![image.jpg](https://img.shields.io/badge/-WORD-268bd2?style=for-the-badge&logo=microsoftword)
 
 | Syntax | Description |
 | ----------- | ----------- |

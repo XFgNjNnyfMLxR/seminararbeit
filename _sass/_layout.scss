@@ -42,7 +42,6 @@
 html {
   @extend %full_size;
 
-  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
 
@@ -58,6 +57,7 @@ body {
 #inner {
   @extend %auto_side_margin;
   
+  overflow-x: hidden;
   height: auto;
   min-height: 100% !important;
   padding: 100px 120px;

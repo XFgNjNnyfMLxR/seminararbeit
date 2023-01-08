@@ -12,10 +12,17 @@
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
+%text {
+  color: #515151;
+  font-size: 18px;
+  line-height: 1.5;
+  text-shadow: 0.25px 0.25px 0.5px rgba(0, 0, 0, .6);
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-weight: normal;
+  // font-weight: normal;
   letter-spacing: .15px;
 }
 
@@ -87,15 +94,13 @@ h6 {
 }
 
 p {
-  color: #515151;
-  font-size: 18px;
-  line-height: 1.5;
-  text-shadow: 0.25px 0.25px 0.5px rgba(0, 0, 0, .6);
+  @extend %text;
 }
 
 a {
+  @extend %text;
+  
   color: #268bd2;
-  font-size: 18px;
   text-decoration: none;
 
   &:hover {
@@ -104,7 +109,9 @@ a {
 }
 
 strong {
-  font-weight: bold;
+  @extend %text;
+  
+  // font-weight: bold;
 }
 
 br {
@@ -112,6 +119,8 @@ br {
 }
 
 em {
+  @extend %text;
+  
   color: #9a9a9a;
 }
 
@@ -127,10 +136,14 @@ ul {
 }
 
 li {
+  @extend %text;
+  
   width: fit-content;
 }
 
-code {}
+code {
+  @extend %text;
+}
 
 div.language-plaintext.highlighter-rouge {
   div.highlight {
@@ -146,22 +159,32 @@ img {}
 table {
   thead {
     tr {
-      th {}
+      th {
+        @extend %text;
+      }
     }
   }
   tbody {
     tr {
-      th {}
+      td {
+        @extend %text;
+      }
     }
   }
 }
 
 dl {
-  dt {}
-  dd {}
+  dt {
+    @extend %text;
+  }
+  dd {
+    @extend %text;
+  }
 }
 
-del {}
+del {
+  @extend %text;
+}
 
 ul.task-list {
   li.task-list {

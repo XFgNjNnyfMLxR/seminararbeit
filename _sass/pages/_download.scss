@@ -1,4 +1,6 @@
 #download-section {
+  @extend %no_select;
+  
   height: 45px;
   display: flex;
   column-gap: 35px;

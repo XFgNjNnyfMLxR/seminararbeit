@@ -1,12 +1,8 @@
 <h1>Download</h1>
-<br>
-
 Laden sie sich die Seminararbeit als Datei herunter,  
 sie ist in unterschiedlichen Formaten verfügbar, die sich dadurch äußerlich voneinander leicht unterscheiden können.  
 <br>
 Die Arbeit kann in den folgenden Versionen heruntergeladen werden:
-<br>
-<br>
 <div id="download-section">
 <a href="/assets/download/content.pdf" download="seminararbeit.pdf">PDF<img src="/assets/icons/pdf.svg" width="25" height="25"></a>
 <a href="/assets/download/content.docx" download="seminararbeit.docx">WORD<img src="/assets/icons/word.svg" width="25" height="25"></a>

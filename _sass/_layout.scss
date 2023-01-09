@@ -30,6 +30,7 @@
   display: flex;
   gap: 10px;
   flex-direction: column;
+  padding-left: 16px;
 }
 
 * {
@@ -174,7 +175,7 @@ li {
   @extend %text;
   
   width: fit-content;
-  padding-inline-start: 14px;
+  // padding-inline-start: 14px;
 }
 
 code {
@@ -231,14 +232,42 @@ ul.task-list {
   }
 }
 
+pre {
+  padding: 16px;
+  background: grey;
+  border-radius: 7px;
+}
+
 sup {
-  a.footnote {}
+  a.footnote {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 div.footnotes {
+  padding-top: 1.5rem;
+  border-top: 2px solid grey;
+  
   ol {
+    li {
+      @extend %grey-text;
+      font-size: 16px;
+    }
+    
     p {
-      a.reversefootnote {}
+      @extend %grey-text;
+      font-size: 16px;
+      margin-bottom: 0;
+      
+      a.reversefootnote {
+        font-weight: bold;
+        
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
 }

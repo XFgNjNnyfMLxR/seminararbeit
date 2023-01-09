@@ -54,6 +54,7 @@ html {
   @extend %full_size;
 
   scroll-behavior: smooth;
+  font-size: 15px;
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
 
   background: css_var(background);
@@ -61,6 +62,7 @@ html {
 
 body {
   @extend %full_size;
+  font-size: 15px;
 }
 
 #inner {

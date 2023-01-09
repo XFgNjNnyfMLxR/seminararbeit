@@ -80,7 +80,7 @@ body {
   
   @media (max-width: 500px) {
     padding: 10%;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
   }
 }
 
@@ -159,6 +159,8 @@ ol {
 
 ul {
   @extend %list;
+  
+  list-style-type: '─';
 }
 
 li {

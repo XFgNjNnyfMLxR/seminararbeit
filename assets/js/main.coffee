@@ -1,9 +1,5 @@
 ---
 ---
 
-document.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach (e) ->
+document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]').forEach (e) ->
   e.setAttribute 'onclick', 'location.hash=this.id'
-
-  
-# document.querySelectorAll("h1,h2,h3,h4,h5,h6").forEach(e=>e.setAttribute("onclick", "location.hash=this.id"))
-# document.querySelectorAll("h1,h2,h3,h4,h5,h6").forEach(function(e){e.setAttribute("onclick", "location.hash=this.id")})

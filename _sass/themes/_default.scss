@@ -1,5 +1,13 @@
 $theme-default: (
-  "home-background": image(background, svg) center / cover repeat fixed border-box border-box #e1edf217
+  "a-color": #268bd2,
+  "h1-color": #303030,
+  "h2-color": #313131,
+  "text-color": #515151,
+  "grey-text-color": #9a9a9a,
+  "selection-color": #6ba2dea1,
+  "background": image(background, svg) center / cover repeat fixed border-box border-box #e1edf217,
+  "page-background": white,
+  "download-button-color": #2B579A
 );
 
 :root, .theme-default {

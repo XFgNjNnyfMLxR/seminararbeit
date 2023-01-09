@@ -11,7 +11,7 @@
   <meta name="generator" content="Jekyll v{{ jekyll.version }}">
   <meta name="language" property="og:locale" content="de-DE">
   <meta name="description" property="og:description" content="{{ include.description }}">
-  <meta name="theme-color" content="{{ site.theme-color }}">
+  <meta name="theme-color" content="{{ site.theme-color | default: '#ffffff' }}">
   
   {%- unless site.keywords == empty -%}
   <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
@@ -35,7 +35,6 @@
 
   {% include_cached cache/favicon.liquid %}
   
-  <!-- <link rel="manifest" href="/site.webmanifest"> -->
   <link rel="canonical" href="{{ site.url }}{{ include.path }}">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   <script type="text/javascript" src="/assets/js/main.js" defer></script>

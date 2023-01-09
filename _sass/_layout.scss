@@ -159,8 +159,6 @@ br {
 
 em {
   @extend %text;
-  
-  ;
 }
 
 blockquote {
@@ -169,10 +167,8 @@ blockquote {
     border-radius: 1.8px;
     background: #8080808f;
     padding: 3px 10px;
-    border-top-left-radius: 2.5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 2.5px;
   }
 }
 
@@ -279,7 +275,6 @@ div.footnotes {
   ol {
     li {
       @extend %grey-text;
-      font-size: 16px;
     }
     
     p {

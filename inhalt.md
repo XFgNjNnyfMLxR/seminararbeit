@@ -57,6 +57,10 @@
   "age": 25
 }
 ```
+---
+test: 1
+tets2: jetzt
+---
 
 ### My Great Heading {#custom-id}
 
@@ -80,3 +84,4 @@ X^2^
 Here's a sentence with a footnote. [^1]
 
 [^1]: This is the footnote.
+[^2]: This is the footnote.

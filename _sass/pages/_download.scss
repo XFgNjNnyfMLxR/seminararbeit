@@ -7,25 +7,25 @@
   
   @media (max-width: 500px) {
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
   
   a {
     color: white;
-    height: 45px;
-    width: fit-content;
     font-weight: bold;
     letter-spacing: 1.5px;
+    
+    height: 45px;
+    width: fit-content;
     display: flex;
     column-gap: 8px;
     align-items: center;
     justify-content: space-evenly;
     padding: 0 30px;
     border-radius: 10px;
-    background: #2B579A;
-    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, .5);
-    
+    background: css_var(download-button-color);
+    box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .5);
     transition: all .2s ease-in-out;
 
     &:hover {

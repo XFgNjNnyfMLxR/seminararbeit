@@ -67,6 +67,11 @@ body {
   flex-direction: column;
   box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, .15);
   background: white;
+  
+  @media (min-width: 500px) {
+    padding: 10%;
+    width: fit-content;
+  }
 }
 
 h1 {

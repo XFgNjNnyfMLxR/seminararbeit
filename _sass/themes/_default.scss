@@ -8,6 +8,7 @@ $theme-default: (
   "background": image(background, svg) center / cover repeat fixed border-box border-box #e1edf217,
   "page-background": white,
   "download-button-color": #2B579A
+  "code-block-color": grey;
 );
 
 :root, .theme-default {

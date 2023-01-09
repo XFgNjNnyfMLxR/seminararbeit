@@ -207,8 +207,12 @@ div.language-plaintext.highlighter-rouge {
   }
 }
 
-hr {}
+hr {
+  
+}
+
 img {
+  @extend %box-shadow;
   @extend %no_select;
 }
 

@@ -13,11 +13,7 @@
   p {
     margin-bottom: 0;
   }
-  
-  h1, h2 {
-    cursor: auto;
-  }
-  
+
   ul {
     @extend %auto_side_margin;
     

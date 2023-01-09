@@ -212,7 +212,7 @@ hr {
 }
 
 img {
-  @extend %box-shadow;
+  // @extend %box-shadow;
   @extend %no_select;
 }
 

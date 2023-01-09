@@ -4,21 +4,21 @@
     box-shadow: none;
     background: unset;
     justify-content: center;
+    
+    @media (max-width: 500px) {
+      padding: 10%;
+    }
   }
   
   h1 {
     margin-bottom: 1.1rem;
   }
   
-  p {
-    margin-bottom: 0;
-  }
-
   ul {
     @extend %auto_side_margin;
     
     gap: 35px;
-    margin-top: 12.2vh;
+    margin-top: 4.4vh;
   }
   
   li {

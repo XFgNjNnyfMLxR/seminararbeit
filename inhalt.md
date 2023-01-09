@@ -79,7 +79,7 @@ I need to highlight these ==very important words==.
 
 H~2~O
 
-X^2^
+X^2^ [^2]
 
 Here's a sentence with a footnote. [^1]
 

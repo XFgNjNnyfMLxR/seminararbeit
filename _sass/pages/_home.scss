@@ -25,7 +25,6 @@
   
   li {
     @extend %no_select;
-    padding-inline-start: 14px;
 
     a {
       padding: 6px;
@@ -37,9 +36,9 @@
       
       &:hover {
         text-decoration: none;
-        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .05);
+        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .05);
         background-color: #687a8642;
-        transition: background-color 0.7s ease;
+        transition: background-color .7s ease;
       }
     }
   }

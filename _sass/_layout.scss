@@ -105,18 +105,26 @@ h2 {
 
 h3 {
   @extend %heading;
+  
+  font-size: 25px;
 }
 
 h4 {
   @extend %heading;
+  
+  font-size: 18px;
 }
 
 h5 {
   @extend %heading;
+  
+  font-size: 14px;
 }
 
 h6 {
   @extend %heading;
+  
+  font-size: 10px;
 }
 
 p {
@@ -156,6 +164,16 @@ em {
 }
 
 blockquote {
+  p {
+    border-left: grey 4px solid;
+    border-radius: 1.8px;
+    background: #8080808f;
+    padding: 3px 10px;
+    border-top-left-radius: 2.5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 2.5px;
+  }
 }
 
 ol {
@@ -175,7 +193,7 @@ li {
   @extend %text;
   
   width: fit-content;
-  // padding-inline-start: 14px;
+  padding-inline-start: 14px;
 }
 
 code {
@@ -234,12 +252,20 @@ ul.task-list {
 
 pre {
   padding: 16px;
-  background: grey;
   border-radius: 7px;
+  background: css_var(code-block-color);
+}
+
+code.highlighter-rouge {
+  padding: 3px;
+  border-radius: 5px;
+  background: css_var(code-block-color);
 }
 
 sup {
   a.footnote {
+    @extend %no_select;
+    
     &:hover {
       text-decoration: none;
     }
@@ -259,9 +285,10 @@ div.footnotes {
     p {
       @extend %grey-text;
       font-size: 16px;
-      margin-bottom: 0;
+      margin: 0 2px 0 8px;
       
       a.reversefootnote {
+        @extend %no_select;
         font-weight: bold;
         
         &:hover {

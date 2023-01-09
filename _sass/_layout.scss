@@ -3,7 +3,6 @@
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .15);
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  
   width: fit-content;
   margin-bottom: 2.2rem;
   
@@ -27,7 +26,6 @@
 %list {
   width: fit-content;
   padding-left: 16px;
-  
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -61,7 +59,6 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
-
   background: css_var(background);
 }
 
@@ -162,7 +159,7 @@ br {
 }
 
 em {
-  @extend %text;
+  @extend %grey-text;
 }
 
 blockquote {
@@ -174,7 +171,6 @@ blockquote {
     border-radius: 1.8px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    
     background: css_var(blockquote);
   }
 }
@@ -248,8 +244,12 @@ del {
 }
 
 ul.task-list {
+  padding: 0;
+  
   li.task-list {
-    input.task-list-item-checkbox {}
+    input.task-list-item-checkbox {
+      margin-right: 14px;
+    }
   }
 }
 
@@ -284,17 +284,22 @@ div.footnotes {
   border-top: 2px solid grey;
   
   ol {
+    padding-left: 22px;
+    
     li {
       @extend %grey-text;
+      font-size: 16px;
+      padding-inline-start: 10px;
     }
     
     p {
       @extend %grey-text;
+      margin: 0;
       font-size: 16px;
-      margin: 0 2px 0 8px;
       
       a.reversefootnote {
         @extend %no_select;
+        margin-left: 2px;
         font-weight: bold;
         
         &:hover {

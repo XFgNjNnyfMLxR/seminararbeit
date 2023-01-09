@@ -15,20 +15,16 @@
   }
   
   p {
-    margin-bottom: 0;
+    margin-bottom: 12.2vh;
   }
   
   ul {
     @extend %auto_side_margin;
-    
     gap: 35px;
-    margin-top: 12.2vh;
   }
   
   li {
     @extend %no_select;
-    
-    list-style-type: '─';
     padding-inline-start: 14px;
 
     a {

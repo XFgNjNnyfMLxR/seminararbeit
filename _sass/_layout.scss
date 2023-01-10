@@ -10,12 +10,13 @@
     cursor: pointer;
     
     @media (min-width: 500px) {
-      margin-left: -70px;
+      margin-left: -1.3em;
       
       &::before {
-        @include size(57px);
+        @include size(.7em);
         content: icon(link);
-        margin-left: 13px;
+        float: left;
+        margin-right: 0.3em;
         visibility: hidden;
       }
       

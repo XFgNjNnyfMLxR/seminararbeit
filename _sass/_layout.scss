@@ -8,6 +8,23 @@
   
   &[id] {
     cursor: pointer;
+    
+    @media (min-width: 500px) {
+      margin-left: -70px;
+      
+      &::before {
+        @include size(57px);
+        content: icon(link);
+        margin-left: 13px;
+        visibility: hidden;
+      }
+      
+       &:hover {
+        &::before {
+          visibility: visible;
+        }
+      }
+    }
   }
 }
 
@@ -208,7 +225,10 @@ div.language-plaintext.highlighter-rouge {
 }
 
 hr {
-  
+  height: 2px;
+  border: 0;
+  border-radius: 0.25px;
+  background: css_var(hr);
 }
 
 img {

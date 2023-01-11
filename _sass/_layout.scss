@@ -301,6 +301,7 @@ table {
 dl {
   dt {
     @extend %text;
+    font-weight: bold;
   }
   dd {
     @extend %text;

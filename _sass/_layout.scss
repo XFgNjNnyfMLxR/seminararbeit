@@ -204,10 +204,16 @@ blockquote {
 
 ol {
   @extend %list;
-  
   margin-left: 7px;
+  
   li {
     padding-inline-start: 7px;
+    
+    &:nth-of-type(even) {
+      &::marker {
+        color: css_var(even-ol-number)
+      }
+    }
   }
 }
 
@@ -222,9 +228,13 @@ ul {
 
 li {
   @extend %text;
-  
   width: fit-content;
   padding-inline-start: 14px;
+  
+  &::marker {
+    font-weight: bold;
+    font-family: normal;
+  }
 }
 
 code {
@@ -252,11 +262,28 @@ img {
 }
 
 table {
+  border-radius: 10px;
+  border-collapse: collapse;
+  
+  tr {
+    background-color: css_var(table-head);
+    
+    &:hover {
+      filter: brightness(.60);
+    }
+    
+    &:nth-of-type(even) {
+      filter: brightness(.80);
+    }
+  }
+  
   thead {
     tr {
       th {
         @extend %text;
-        padding: 20px;
+        color: css_var(table-caption);
+        padding: 15px;
+        text-align: left;
       }
     }
   }

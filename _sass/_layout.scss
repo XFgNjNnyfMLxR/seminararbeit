@@ -9,9 +9,9 @@
     cursor: pointer;
     
     @media (min-width: 500px) {
-      
       &::after {
         @include size(.7em);
+        
         content: icon(link);
         float: right;
         margin-left: 0.3em;
@@ -155,8 +155,6 @@ h6 {
 
 p {
   @extend %text;
-  
-  // margin-bottom: 3.5rem;
 }
 
 a {
@@ -288,38 +286,38 @@ ul.task-list {
     padding-inline-start: 0;
     
     input.task-list-item-checkbox {
-      // cursor: not-allowed;
+      @include size(1.15em);
+      @include vendors(appearance, none, webkit);
       
-      -webkit-appearance: none;
-      appearance: none;
-      margin-right: 14px;
-      appearance: none;
-      background-color: unset;
       font: inherit;
       color: currentColor;
-      width: 1.15em;
-      height: 1.15em;
+      margin-right: 14px;
       border: 0.15em solid currentColor;
       border-radius: 0.15em;
       transform: translateY(0.175em);
-      background-color: CanvasText;
       
       &::before {
+        @include size(.65em);
+        
         content: "";
-        width: 0.65em;
-        height: 0.65em;
         transform: scale(0);
         transition: 120ms transform ease-in-out;
-        box-shadow: inset 1em 1em rebeccapurple;
+        box-shadow: inset 1em 1em black;
+        transform-origin: bottom left;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
       }
       
-      :focus {
+      &:focus {
         outline: max(2px, 0.15em) solid currentColor;
         outline-offset: max(2px, 0.15em);
       }
       
-      &[checked], &:checked {
-        ::before {
+      &[disabled=disabled], &:disabled {
+        // cursor: not-allowed;
+      }
+      
+      &[checked=checked], &:checked {
+        &::before {
           transform: scale(1);
         }
       }

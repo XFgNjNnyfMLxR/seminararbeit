@@ -205,6 +205,11 @@ blockquote {
 
 ol {
   @extend %list;
+  
+  margin-left: 7px;
+  li {
+    padding-inline-start: 7px;
+  }
 }
 
 ul {
@@ -281,8 +286,34 @@ ul.task-list {
   padding: 0;
   
   li.task-list {
+    padding-inline-start: 0;
+    
     input.task-list-item-checkbox {
+      -webkit-appearance: none;
+      appearance: none;
       margin-right: 14px;
+      appearance: none;
+      background-color: #fff;
+      font: inherit;
+      color: currentColor;
+      width: 1.15em;
+      height: 1.15em;
+      border: 0.15em solid currentColor;
+      border-radius: 0.15em;
+      transform: translateY(0.175em);
+      
+      &::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em var(--form-control-color);
+        
+        @include qualify(:checked) {
+          transform: scale(1);
+        }
+      }
     }
   }
 }

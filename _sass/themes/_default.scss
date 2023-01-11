@@ -4,14 +4,16 @@ $theme-default: (
   "h2": #313131,
   "hr": grey,
   "text": #515151,
+  "page": #fbfbfb,
   "grey-text": #9a9a9a,
+  "checkmark": #268bd2,
+  "checkbox-border": #535267,
   "selection": #6ba2dea1,
+  "code-block": #afafafcc,
   "background": image(background, svg) center / cover repeat fixed border-box border-box #e1edf217,
-  "page": white,
   "download-button": #2B579A,
-  "code-block": linear-gradient(353deg, rgb(135,150,175) 0%, rgb(180,180,180) 100%),
-  "blockquote": linear-gradient(158deg, rgba(128,128,128,0.8) 5%, rgba(187,172,187,0.8) 100%),
-  "blockquote-border": grey,
+  "blockquote": #afafafcc,
+  "blockquote-border": grey
 );
 
 :root, .theme-default {

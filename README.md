@@ -5,8 +5,8 @@ Das ist die online Version unserer, im rahmen des Berufskolleg entstandenen, Sem
 Die Arbeit beschäftigt sich mit Putins hybrider Kriegsführung und Propaganda und dessen Auswirkungen auf die Demokratie in Deutschland.
 Aufgrund des aktullen Angriffkrieges Putins auf die Urkaine (Stand: Jan 2023) wurde sich für dieses Thema entschieden, mehr dazu in der [Einleitung][starting_page]  
 
-- [Verzeichnis][table_page]
 - [Inhalt][abstract_page]
+- [Verzeichnis][table_page]
 - [Quellen][sources_page]
 - [Download][download_page]
 

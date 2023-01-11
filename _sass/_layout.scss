@@ -291,11 +291,13 @@ ul.task-list {
     padding-inline-start: 0;
     
     input.task-list-item-checkbox {
+      // cursor: not-allowed;
+      
       -webkit-appearance: none;
       appearance: none;
       margin-right: 14px;
       appearance: none;
-      background-color: #fff;
+      background-color: unset;
       font: inherit;
       color: currentColor;
       width: 1.15em;
@@ -303,6 +305,7 @@ ul.task-list {
       border: 0.15em solid currentColor;
       border-radius: 0.15em;
       transform: translateY(0.175em);
+      background-color: CanvasText;
       
       &::before {
         content: "";
@@ -310,11 +313,18 @@ ul.task-list {
         height: 0.65em;
         transform: scale(0);
         transition: 120ms transform ease-in-out;
-        box-shadow: inset 1em 1em var(--form-control-color);
+        box-shadow: inset 1em 1em rebeccapurple;
       }
       
-      &:checked::before {
-        transform: scale(1);
+      :focus {
+        outline: max(2px, 0.15em) solid currentColor;
+        outline-offset: max(2px, 0.15em);
+      }
+      
+      &[checked], &:checked {
+        ::before {
+          transform: scale(1);
+        }
       }
     }
   }

@@ -102,7 +102,7 @@ body {
   gap: 35px;
   flex-direction: column;
   background: css_var(page);
-  box-shadow: 0 54px 55px rgba(0, 0, 0, .25);
+  box-shadow: 0 0 55px rgba(0, 0, 0, .25);
   
   &:last-child {
     margin-bottom: 0;
@@ -159,7 +159,7 @@ h6 {
 p {
   @extend %text;
   
-  margin-bottom: 3.5rem;
+  // margin-bottom: 3.5rem;
 }
 
 a {

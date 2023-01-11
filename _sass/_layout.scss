@@ -267,7 +267,7 @@ table {
   
   tr {
     &:nth-of-type(even) {
-      filter: brightness(.80);
+      filter: brightness(.93);
     }
   }
   
@@ -299,7 +299,7 @@ table {
       
       &:hover {
         cursor: pointer;
-        filter: brightness(.60) !important;
+        filter: brightness(.85) !important;
       }
     }
   }

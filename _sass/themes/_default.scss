@@ -13,7 +13,10 @@ $theme-default: (
   "background": image(background, svg) center / cover repeat fixed border-box border-box #e1edf217,
   "download-button": #2B579A,
   "blockquote": #afafafcc,
-  "blockquote-border": grey
+  "blockquote-border": grey,
+  "even-ol-number": #3f51b5,
+  "table-head": #268bd2,
+  "table-caption": #f8f4ff,
 );
 
 :root, .theme-default {

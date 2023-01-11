@@ -3,6 +3,7 @@
   display: flex;
   gap: 35px;
   flex-wrap: wrap;
+  margin-top: 10px;
   
   @media (max-width: 500px) {
     align-items: center;

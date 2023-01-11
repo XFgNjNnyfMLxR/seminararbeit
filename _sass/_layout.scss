@@ -14,7 +14,8 @@
         content: icon(link);
         
         float: right;
-        margin-left: 0.3em;
+        margin-left: 0.25em;
+        margin-top: -0.12em;
         visibility: hidden;
       }
       
@@ -244,6 +245,7 @@ hr {
 
 img {
   @extend %no_select;
+  box-shadow: 0 0 4px #bfbfbf;
 }
 
 table {

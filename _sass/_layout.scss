@@ -192,7 +192,8 @@ em {
 blockquote {
   p {
     @extend %box-shadow;
-
+    
+    color: css_var(blockquote-text);
     padding: 3px 10px;
     border-left: css_var(blockquote-border) 6px solid;
     border-radius: 1.8px;
@@ -289,6 +290,8 @@ table {
   
   tbody {
     tr {
+      background-color: css_var(table-body);
+      
       td {
         @extend %text;
         padding: 15px;

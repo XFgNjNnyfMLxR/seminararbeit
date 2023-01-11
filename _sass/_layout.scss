@@ -11,8 +11,8 @@
     @media (min-width: 500px) {
       &::after {
         @include size(.7em);
-        
         content: icon(link);
+        
         float: right;
         margin-left: 0.3em;
         visibility: hidden;

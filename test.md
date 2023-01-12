@@ -9,7 +9,7 @@
 
 *italicized text*
 
-<mark>very important words</mark>.
+these are <mark>very important words</mark> and so on.
 
 > blockquote
 > 2. row
@@ -22,7 +22,7 @@
 - Second item
 - Third item
 
-`code`
+`codeblock`
 
 ---
   
@@ -52,20 +52,20 @@ term
 
 term2
 : definition 2
-: hey haha
+: 2. row
 
 ~~The world is flat.~~
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+- [x] choose topic
+- [ ] make the website
+- [ ] write the project
 
-I need to highlight these ==very important words== [^2]
+This is a sentence with a footnote [^2]
 
 H<sub>2</sub>O
 
-Here's a sentence with a footnote. [^1]
+Here's another sentence with a footnote. [^1]
 
 [^1]: This is the footnote.
-[^2]: This is the footnote.
-[^3]: This is the footnote.
+[^2]: This is a good footnote.
+[^3]: This is an even better footnote.

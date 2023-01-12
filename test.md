@@ -9,8 +9,10 @@
 
 *italicized text*
 
+<mark>very important words</mark>.
+
 > blockquote
-> ge
+> 2. row
 
 1. First item
 2. Second item
@@ -28,8 +30,6 @@
 
 ![image.jpg](https://img.shields.io/badge/-WORD-268bd2?style=for-the-badge&logo=microsoftword)
 
-[![image.jpg](https://img.shields.io/badge/-WORD-268bd2?style=for-the-badge&logo=microsoftword)](https://www.markdownguide.org/cheat-sheet/#extended-syntax)
-
 | Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
@@ -38,14 +38,6 @@
 | Paragraph 3 | Text 3 |
 
 ```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-```json
 {
   "firstName": "John",
   "lastName": "Smith",
@@ -67,10 +59,6 @@ term2
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-
-<mark>very important words</mark>.
-
-That is so funny! :joy:
 
 I need to highlight these ==very important words== [^2]
 

@@ -110,6 +110,18 @@ body {
   }
 }
 
+#home-button {
+  display: none;
+}
+
+#left-button {
+  display: none;
+}
+
+#right-button {
+  display: none;
+}
+
 h1 {
   @extend %heading;
   

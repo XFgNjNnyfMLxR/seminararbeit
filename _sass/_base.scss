@@ -46,7 +46,7 @@
   }
   
   @each $vendor in $vendors {
-    #{'@-' + $vendor + '-keyframes ' + $name} {
+    @#{'-' + $vendor + '-keyframes ' + $name} {
       @content;
     }
   }

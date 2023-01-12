@@ -287,6 +287,10 @@ table {
   }
 }
 
+canvas {
+  margin: 20px auto;
+}
+
 @keyframes mark-highlight {
   to {
     background-position: 0 0;

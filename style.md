@@ -12,7 +12,6 @@
 > blockquote
 > ge
 
-
 1. First item
 2. Second item
 3. Third item
@@ -54,12 +53,14 @@
 }
 ```
 
-### My Great Heading {#custom-id} [^3]
+### My Great Heading [^3]
 
 term
 : definition
+
 term2
 : definition 2
+: hey haha
 
 ~~The world is flat.~~
 
@@ -67,14 +68,13 @@ term2
 - [ ] Update the website
 - [ ] Contact the media
 
+<mark>very important words</mark>.
 
 That is so funny! :joy:
 
-I need to highlight these ==very important words==.
+I need to highlight these ==very important words== [^2]
 
-H~2~O
-
-X^2^ [^2]
+H<sub>2</sub>O
 
 Here's a sentence with a footnote. [^1]
 

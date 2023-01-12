@@ -45,6 +45,8 @@ these are <mark>very important words</mark> and so on.
 }
 ```
 
+<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
 ### My Great Heading
 
 term
@@ -69,3 +71,29 @@ Here's another sentence with a footnote. [^1]
 [^1]: This is the footnote.
 [^2]: This is a good footnote.
 [^3]: This is an even better footnote.
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>

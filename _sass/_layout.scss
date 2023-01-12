@@ -202,9 +202,11 @@ ol {
   li {
     padding-inline-start: 7px;
     
+    /*
     &:nth-of-type(even) {
       filter: brightness(.82);
     }
+    */
   }
 }
 

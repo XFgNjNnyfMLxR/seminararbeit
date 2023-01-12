@@ -40,18 +40,6 @@
   }
 }
 
-@mixin keyframes($name, $vendors: (webkit)) {
-  @keyframes #{$name} {
-      @content;
-  }
-  
-  @each $vendor in $vendors {
-    @#{'-' + $vendor + '-keyframes ' + $name} {
-      @content;
-    }
-  }
-}
-
 @mixin vendors($property, $value, $vendors) {
   #{$property}: $value;
   

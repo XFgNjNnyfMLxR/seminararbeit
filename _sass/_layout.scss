@@ -182,6 +182,7 @@ em {
 
 blockquote {
   p {
+    white-space: pre-wrap;
     color: css_var(blockquote-text);
     padding: 3px 10px;
     border-left: css_var(blockquote-border) 6px solid;
@@ -290,6 +291,7 @@ dl {
   
   dt {
     font-weight: bold;
+    margin-bottom: 5px;
   }
   dd {
     margin-left: 5%;
@@ -347,29 +349,15 @@ ul.task-list {
 
 pre {
   padding: 16px;
-  border-radius: 7px;
+  border-radius: 12px;
   background: css_var(code-block);
 }
-
-/*
-code {
-  @extend %text;
-  color: css_var(code-block-text);
-  background: css_var(code-block);
-}
-
-code.highlighter-rouge {
-  padding: 3px;
-  border-radius: 5px;
-  background: css_var(code-block);
-}
-*/
 
 code.highlighter-rouge {
   @extend %text;
   
-  padding: 3px;
-  border-radius: 5px;
+  padding: 4px;
+  border-radius: 6px;
   color: css_var(code-block-text);
   background: css_var(code-block);
 }

@@ -181,6 +181,8 @@ em {
 }
 
 blockquote {
+  cursor: text;
+  
   p {
     white-space: pre-wrap;
     color: css_var(blockquote-text);
@@ -374,6 +376,7 @@ ul.task-list {
 }
 
 pre {
+  cursor: text;
   padding: 16px;
   border-radius: 12px;
   background: css_var(code-block);

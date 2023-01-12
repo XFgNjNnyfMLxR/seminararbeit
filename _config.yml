@@ -4,7 +4,6 @@ description: |-
   Die online Version unserer Seminararbeit.
 keywords: ["Seminararbeit", "hybride Kriegsführung", "Putin", "Propaganda", "Deutschland", "Demokratie", "Putins Kriegsführung"]
 css_theme: default
-paginate_to: 3
 theme-color: "#7aaff3"
 
 permalink: pretty

@@ -12,7 +12,7 @@
 these are <mark>very important words</mark> and so on.
 
 > blockquote
-> 2. row
+> second row
 
 1. First item
 2. Second item
@@ -52,7 +52,7 @@ term
 
 term2
 : definition 2
-: 2. row
+: second row
 
 ~~The world is flat.~~
 

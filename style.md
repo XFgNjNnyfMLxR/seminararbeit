@@ -29,6 +29,8 @@
 
 ![image.jpg](https://img.shields.io/badge/-WORD-268bd2?style=for-the-badge&logo=microsoftword)
 
+[![image.jpg](https://img.shields.io/badge/-WORD-268bd2?style=for-the-badge&logo=microsoftword)](https://www.markdownguide.org/cheat-sheet/#extended-syntax)
+
 | Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
@@ -52,14 +54,6 @@
 }
 ```
 
-```invalid123
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
 ### My Great Heading {#custom-id} [^3]
 
 term
@@ -72,6 +66,7 @@ term2
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
+
 
 That is so funny! :joy:
 

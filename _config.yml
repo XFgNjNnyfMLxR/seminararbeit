@@ -11,6 +11,13 @@ permalink: pretty
 sass:
     style: compressed
     
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+    syntax_highlighter_opts:
+        css_class: 'highlight'
+
 plugins:
 - jekyll-sitemap
 - jekyll-redirect-from

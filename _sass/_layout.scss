@@ -285,29 +285,16 @@ table {
   }
 }
 
-@-webkit-keyframes, @keyframes {
-  highlight {
-    to {
-      background-position: 0 0;
-    }
-  }
-}
-/*
-@-webkit-keyframes highlight {
+@include keyframes(mark-highlight) {
   to {
     background-position: 0 0;
   }
 }
-
-@keyframes highlight {
-  to {
-    background-position: 0 0;
-  }
-}
-*/
 
 mark {
-  @include vendors(animation, 1.5s highlight 1.5s 1 normal forwards, webkit);
+  @extend %text;
+  @include vendors(animation, 1.5s mark-highlight 1.5s 1 normal forwards, webkit);
+  
   background-color: none;
   background: linear-gradient(90deg, css_var(mark) 50%, rgba(255, 255, 255, 0) 50%) 100% 0 / 200% 100%;
 }

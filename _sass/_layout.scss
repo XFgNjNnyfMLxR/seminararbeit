@@ -285,7 +285,13 @@ table {
   }
 }
 
-@include keyframes(mark-highlight) {
+@keyframes mark-highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes mark-highlight {
   to {
     background-position: 0 0;
   }

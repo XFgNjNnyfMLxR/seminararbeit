@@ -90,6 +90,7 @@ html {
 
 body {
   @extend %full_size;
+  -webkit-tap-highlight-color: #0000;
 }
 
 #inner {
@@ -223,6 +224,10 @@ ul {
   &.task-list {
     list-style-type: none;
   }
+  
+  &::marker {
+    font-weight: bold;
+  }
 }
 
 li {
@@ -231,7 +236,6 @@ li {
   padding-inline-start: 14px;
   
   &::marker {
-    font-weight: bold;
     font-family: normal;
   }
 }
@@ -262,13 +266,14 @@ img {
 }
 
 table {
+  @extend %box-shadow;
   overflow: hidden;
   border-radius: 6px;
   border-collapse: collapse;
   
   tr {
     &:nth-of-type(even) {
-      filter: brightness(.93);
+      filter: brightness(.95);
     }
   }
   
@@ -300,7 +305,7 @@ table {
       
       &:hover {
         cursor: pointer;
-        filter: brightness(.85) !important;
+        filter: brightness(.88) !important;
       }
     }
   }
@@ -311,9 +316,9 @@ dl {
   
   dt {
     @extend %text;
-    font-weight: bold;
     float: left;
     clear: left;
+    font-weight: bold;
   }
   dd {
     @extend %text;

@@ -45,10 +45,10 @@
 }
 ```
 
-### My Great Heading [^3]
+### My Great Heading
 
 term
-: definition
+: definition [^3]
 
 term2
 : definition 2

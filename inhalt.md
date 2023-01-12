@@ -10,7 +10,7 @@
 *italicized text*
 
 > blockquote
->  ge
+> ge
 
 
 1. First item
@@ -33,6 +33,8 @@
 | ----------- | ----------- |
 | Header | Title |
 | Paragraph | Text |
+| Paragraph 2 | Text 2 |
+| Paragraph 3 | Text 3 |
 
 ```
 {
@@ -57,15 +59,13 @@
   "age": 25
 }
 ```
----
-test: 1
-tets2: jetzt
----
 
-### My Great Heading {#custom-id}
+### My Great Heading {#custom-id} [^3]
 
 term
 : definition
+term2
+: definition 2
 
 ~~The world is flat.~~
 
@@ -85,3 +85,4 @@ Here's a sentence with a footnote. [^1]
 
 [^1]: This is the footnote.
 [^2]: This is the footnote.
+[^3]: This is the footnote.

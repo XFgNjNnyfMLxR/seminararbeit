@@ -8,12 +8,6 @@ paginate_to: 3
 theme-color: "#7aaff3"
 
 permalink: pretty
-    
-defaults:
-  -  scope:
-      path: "seite/*.md"
-    values:
-      paginate: true
       
 sass:
     style: compressed

@@ -5,7 +5,7 @@ document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]').forEach(e
 i=document.getElementById('inner')
 
 if(i!==null){
-  i.addEventListener('swiped-down',e=>{if(e.detail.yStart<100){location="https://seminararbeit.github.io"}})
+  i.addEventListener('swiped-down',e=>{if(e.detail.yStart<80){location="https://seminararbeit.github.io"}})
   l=document.getElementById('left-button')
   r=document.getElementById('right-button')
   

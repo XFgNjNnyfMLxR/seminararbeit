@@ -17,6 +17,8 @@
   <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
   {%- endunless -%}
 
+  {% include_cached cache/google_tag.liquid %}
+  
   <meta property="og:type" content="WebSite">
   <meta property="og:url" content="{{ site.url }}{{ include.path }}">
   <meta property="og:title" content="{{ include.title }}">

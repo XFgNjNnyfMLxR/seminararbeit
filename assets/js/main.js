@@ -8,6 +8,13 @@ if(i!==null){
   l=document.getElementById('left-button')
   r=document.getElementById('right-button')
   
+  i.addEventListener('swiped-down',e=>{
+    console.log(e.detail.xStart)
+    if(e.detail.xStart<100) {
+      location="https://seminararbeit.github.io"
+    }
+  })
+  
   if(l!=null){
     i.addEventListener('swiped-left',_=>{location.href=l.href})
   }

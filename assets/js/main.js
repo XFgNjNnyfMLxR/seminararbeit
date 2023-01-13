@@ -9,8 +9,8 @@ if(i!==null){
   r=document.getElementById('right-button')
   
   i.addEventListener('swiped-down',e=>{
-    console.log(e.detail.xStart)
-    if(e.detail.xStart<100) {
+    console.log(e.detail.yStart)
+    if(e.detail.yStart<100) {
       location="https://seminararbeit.github.io"
     }
   })

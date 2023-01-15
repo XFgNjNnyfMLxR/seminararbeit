@@ -1,0 +1,11 @@
+<head prefix="og: http://ogp.me/ns#">
+  {% include_cached cache/head.liquid title=title path=page.url description=description %}
+
+  {% if page.previous_site %}
+  <link rel=”prev” href=”{{ page.previous_site }}″>
+  {% endif %}
+
+  {% if page.next_site %}
+  <link rel=”next” href=”{{ page.next_site }}″>
+  {% endif %}
+</head>

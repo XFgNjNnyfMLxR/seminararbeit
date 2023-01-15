@@ -1,5 +1,5 @@
 {% for file in site.static_files %}
 {% if file.path contains "/assets/icons/" %}
-<link rel="prefetch" href="{{ icon.path }}" as="image" type="image/svg+xml">
+<link rel="prefetch" href="{{ file.path }}" as="image" type="image/svg+xml">
 {% endif %}
 {% endfor %}

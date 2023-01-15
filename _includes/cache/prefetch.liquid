@@ -1,17 +1,5 @@
-{%- assign icons = site.static_files | where_exp: "path", 'path contains "/assets/icons/"' -%}
-
-<!-- icons: {{ icons | inspect }} -->
-<!-- static: {{ site.static_files | jsonify }} -->
-
-{% for i in site.static_files %}
-{% if i.path contains "/assets/icons/" %}
-<!-- icon: -->
-{% endif %}
-<!-- {{ i.dir }} | {{ i.name }} | {{ i.url }} | {{ i.path }} -->
-{% endfor %}
-
 {% for file in site.static_files %}
   {% if file.path contains "/assets/icons/" %}
-  <link rel="prefetch" href="/assets/icons/{{ icon.name }}" as="image" type="image/svg+xml">
+  <link rel="prefetch" href="{{ icon.path }}" as="image" type="image/svg+xml">
   {% endif %}
 {% endfor %}

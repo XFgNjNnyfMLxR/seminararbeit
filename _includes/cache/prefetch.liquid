@@ -1,0 +1,5 @@
+{%- assign icons = site.static_files | where: "dir", "/assets/icons/" -%}
+
+{% for icon in icons %}
+<link rel="prefetch" href="/assets/icons/{{ icon.name }}" as="image" type="image/svg+xml">
+{% endfor %}

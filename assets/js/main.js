@@ -10,9 +10,9 @@ if(i!==null){
   r=document.getElementById('right-button')
   
   if(l!=null){
-    i.addEventListener('swiped-left',_=>{location.href=l.href})
+    i.addEventListener('swiped-left',_=>{location.href=r.href})
   }
   if(r!=null){
-    i.addEventListener('swiped-right',_=>{location.href=r.href})
+    i.addEventListener('swiped-right',_=>{location.href=l.href})
   }
 }

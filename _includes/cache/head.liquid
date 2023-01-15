@@ -35,7 +35,7 @@
 {% include_cached cache/prefetch.liquid %}
 
 <link rel="canonical" href="{{ site.url }}{{ include.path }}">
-<link rel="stylesheet" href="/assets/css/main.css" media="print" onload="this.media='all'">
+<link rel="preload" href="/assets/css/main.css" as="style" type="text/css" fetchpriority="low" onload="this.rel='stylesheet'">
 <script type="text/javascript" src="/assets/js/main.js" defer></script>
 <script type="application/ld+json">
 {

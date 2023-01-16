@@ -2,6 +2,10 @@
   display: none;
 }
 
+%text_cursor {
+  cursor: text;
+}
+
 %full_size {
   width: 100%;
   height: 100%;
@@ -10,6 +14,10 @@
 %auto_side_margin {
   margin-left: auto;
   margin-right: auto;
+}
+
+%no_text_decoration {
+  text-decoration: none;
 }
 
 @mixin size($size) {
@@ -76,8 +84,8 @@
   }
 }
 
-@function icon($name) {
-  @return url("/assets/icons/#{$name}.svg");
+@function icon($name, $type: svg) {
+  @return url("/assets/icons/#{$name}.#{$type}");
 }
 
 @function image($name, $type: png) {

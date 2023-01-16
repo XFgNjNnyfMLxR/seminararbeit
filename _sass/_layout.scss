@@ -68,7 +68,7 @@
 }
 
 ::-webkit-scrollbar {
-  @extend %display_none;
+  display: none;
 }
 
 html {
@@ -129,7 +129,7 @@ body {
   }
   
   @media (max-width: 768px) {
-    @extend %display_none;
+    display: none;
   }
 }
 

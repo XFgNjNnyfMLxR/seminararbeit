@@ -1,9 +1,9 @@
 %heading {
+  width: fit-content;
   hyphens: auto;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .15);
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  width: fit-content;
   
   &[id] {
     cursor: pointer;
@@ -34,10 +34,10 @@
 }
 
 %text {
+  color: css_var(text);
   font-size: 18px;
   line-height: 1.5;
   text-shadow: .25px .25px .5px rgba(0, 0, 0, .6);
-  color: css_var(text);
   
   @media (max-width: 768px) {
     font-size: 16px;
@@ -67,10 +67,6 @@
   background: css_var(selection);
 }
 
-::-moz-selection {
-  background: css_var(selection);
-}
-
 ::-webkit-scrollbar {
   @extend %display_none;
 }
@@ -97,10 +93,10 @@ body {
   max-width: 1340px;
   padding: 100px 140px;
   box-sizing: border-box;
-  overflow-x: hidden;
   display: flex;
   gap: 35px;
   flex-direction: column;
+  overflow-x: hidden;
   background: css_var(page);
   box-shadow: 0 0 55px rgba(0, 0, 0, .1);
   
@@ -133,7 +129,7 @@ body {
   }
   
   @media (max-width: 768px) {
-    display: none;
+    @extend %display_none;
   }
 }
 
@@ -223,7 +219,7 @@ em {
 }
 
 blockquote {
-  cursor: text;
+  @extend %text_cursor;
   
   p {
     white-space: pre-wrap;
@@ -313,7 +309,7 @@ table {
       }
       
       &:hover {
-        cursor: text;
+        @extend %text_cursor;
       }
     }
   }
@@ -410,7 +406,7 @@ ul.task-list {
         clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
         transform: scale(0);
         transform-origin: bottom left;
-        transition: 120ms transform ease-in-out;
+        transition: transform 120ms ease-in-out;
       }
       
       &:focus {
@@ -428,7 +424,7 @@ ul.task-list {
 }
 
 pre {
-  cursor: text;
+  @extend %text_cursor;
   padding: 16px;
   border-radius: 12px;
   background: css_var(code-block);
@@ -448,7 +444,7 @@ sup {
     @extend %no_select;
     
     &:hover {
-      text-decoration: none;
+      @extend %no_text_decoration;
     }
   }
 }
@@ -477,7 +473,7 @@ div.footnotes {
         font-weight: bold;
         
         &:hover {
-          text-decoration: none;
+          @extend %no_text_decoration;
         }
       }
     }

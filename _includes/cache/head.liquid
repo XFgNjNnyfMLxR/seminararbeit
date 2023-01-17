@@ -1,5 +1,4 @@
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{{ include.title }}</title>
@@ -16,6 +15,8 @@
 <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
 {%- endunless -%}
 
+{% include_cached cache/site_verification.liquid %}
+
 <meta property="og:type" content="WebSite">
 <meta property="og:url" content="{{ site.url }}{{ include.path }}">
 <meta property="og:title" content="{{ include.title }}">
@@ -31,7 +32,6 @@
 <meta property="twitter:image" content="{{ site.url }}/assets/favicon/square.png">
 
 {% include_cached cache/favicon.liquid %}
-{% include_cached cache/site_verification.liquid %}
 {% include_cached cache/prefetch.liquid %}
 
 <link rel="canonical" href="{{ site.url }}{{ include.path }}">

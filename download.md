@@ -1,5 +1,5 @@
 <h1>Download</h1>
-Laden sie sich die Seminararbeit als Datei herunter,  
+Laden Sie sich die Seminararbeit als Datei herunter,  
 sie ist in unterschiedlichen Formaten verfügbar, die sich dadurch äußerlich voneinander leicht unterscheiden können.  
 <br>
 Die Arbeit kann in den folgenden Versionen heruntergeladen werden:

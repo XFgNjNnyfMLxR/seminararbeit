@@ -11,6 +11,7 @@
     {% include_cached cache/favicon.liquid %}
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <link rel="next" href="{{ page.redirect.to }}">
+    <link rel="prefetch" href="{{ page.redirect.to }}" as="document">
   </head>
   <body>
     <div id="inner">

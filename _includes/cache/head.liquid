@@ -4,7 +4,8 @@
 
 {% include_cached cache/favicon.liquid %}
 <script src="/assets/js/main.js" defer></script>
-<link rel="stylesheet" href="/assets/css/main.css">
+<!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
+<link rel="preload" href="/assets/css/main.css" as="style" onload="this.rel='stylesheet'">
 
 <meta name="author" content="{{ author }}">
 <meta name="copyright" content="{{ author }}">

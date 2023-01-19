@@ -2,6 +2,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{{ include.title }}</title>
+<script src="/assets/js/main.js" defer></script>
+<link rel="stylesheet" href="/assets/css/main.css">
+
+{% include_cached cache/favicon.liquid %}
+<link rel="canonical" href="{{ site.url }}{{ include.path }}">
+
 <meta name="author" content="{{ author }}">
 <meta name="copyright" content="{{ author }}">
 <meta name="publisher" content="{{ author }}">
@@ -30,12 +36,6 @@
 <meta property="twitter:card" content="summary">
 <meta property="twitter:image" content="{{ site.url }}/assets/favicon/square.png">
 
-{% include_cached cache/favicon.liquid %}
-{% include_cached cache/prefetch.liquid %}
-
-<link rel="canonical" href="{{ site.url }}{{ include.path }}">
-<link rel="stylesheet" href="/assets/css/main.css">
-<script src="/assets/js/main.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -45,3 +45,4 @@
   "url": "{{ site.url }}{{ include.path }}"
 }
 </script>
+{% include_cached cache/prefetch.liquid %}

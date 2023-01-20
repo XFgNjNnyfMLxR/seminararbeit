@@ -3,9 +3,9 @@
 <title>{{ include.title }}</title>
 
 {% include_cached cache/favicon.liquid %}
-<script src="/assets/js/main.js" defer></script>
-<link rel="preload" href="/assets/css/main.css" as="style">
-<link rel="stylesheet" href="/assets/css/main.css">
+{% include_cached cache/script.liquid %}
+{% include_cached cache/stylesheet.liquid %}
+{% include_cached cache/site_verification.liquid %}
 
 <meta name="author" content="{{ author }}">
 <meta name="copyright" content="{{ author }}">
@@ -18,8 +18,6 @@
 {%- unless site.keywords == empty -%}
 <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
 {%- endunless -%}
-
-{% include_cached cache/site_verification.liquid %}
 
 <meta property="og:type" content="WebSite">
 <meta property="og:url" content="{{ site.url }}{{ include.path }}">

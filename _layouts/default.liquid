@@ -2,7 +2,9 @@
 
 <!doctype html>
 <html class="theme-{{ theme }}" id="{{ id }}" lang="de-DE">
-  {% include head.liquid %}
+  <head prefix="og: http://ogp.me/ns#">
+    {% include head.liquid %}
+  </head>
   <body>
     {{ content }}
   </body>

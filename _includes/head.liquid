@@ -1,13 +1,11 @@
-<head prefix="og: http://ogp.me/ns#">
-  {% include_cached cache/head.liquid title=title path=page.url description=description %}
+{% include_cached cache/head.liquid title=title path=page.url description=description %}
 
-  {% if page.previous_site %}
-  <link rel="prev" href="{{ page.previous_site }}">
-  <link rel="prefetch" href="{{ page.previous_site }}" as="document">
-  {% endif %}
+{% if page.previous_site %}
+<link rel="prev" href="{{ page.previous_site }}">
+<link rel="prefetch" href="{{ page.previous_site }}" as="document">
+{% endif %}
 
-  {% if page.next_site %}
-  <link rel="next" href="{{ page.next_site }}">
-  <link rel="prefetch" href="{{ page.next_site }}" as="document">
-  {% endif %}
-</head>
+{% if page.next_site %}
+<link rel="next" href="{{ page.next_site }}">
+<link rel="prefetch" href="{{ page.next_site }}" as="document">
+{% endif %}

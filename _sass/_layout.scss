@@ -72,13 +72,8 @@
 }
 
 :focus-visible {
-  transform: scale(1.02);
   outline: css_var(tab-outline) solid max(3px, .12em);
   outline-offset: max(1px, .04em);
-  
-  @include when-is(".side-button") {
-    transform: unset;
-  }
 }
 
 html {

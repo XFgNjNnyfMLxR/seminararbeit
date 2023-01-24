@@ -73,7 +73,7 @@
 
 :focus-visible {
   transform: scale(1.02);
-  outline: lightskyblue solid max(2px, .08em);
+  outline: css_var(tab-outline) solid max(3px, .12em);
   outline-offset: max(1px, .04em);
 }
 

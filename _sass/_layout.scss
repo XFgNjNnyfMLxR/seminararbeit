@@ -71,6 +71,11 @@
   display: none;
 }
 
+:focus-visible {
+  transform: scale(1.02);
+  outline: currentcolor solid max(2px, .08em);
+}
+
 html {
   @extend %full_size;
 

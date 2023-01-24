@@ -38,9 +38,11 @@
   }
 }
 
-@mixin qualify($selector) {
-  @at-root #{$selector + &} {
-    @content;
+@mixin when-is($selectors) {
+  @at-root {
+    #{$selectors} {
+      @content;
+    }
   }
 }
 

@@ -11,7 +11,6 @@ Aufgrund des aktuellen Angriffskrieges Putins auf die Ukraine (Stand: Jan 2023) 
 - [Download][download_page]
 
 
-
 [abstract_page]: /seite/1.md
 [table_page]: /seite/2.md
 [starting_page]: /seite/3.md

@@ -73,7 +73,8 @@
 
 :focus-visible {
   transform: scale(1.02);
-  outline: currentcolor solid max(2px, .08em);
+  outline: lightskyblue solid max(2px, .08em);
+  outline-offset: max(1px, .04em);
 }
 
 html {

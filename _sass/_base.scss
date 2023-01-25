@@ -38,6 +38,42 @@
   }
 }
 
+@mixin vendors($property, $value, $vendors...) {
+  #{$property}: $value;
+  
+  @each $vendor in $vendors {
+    #{'-' + $vendor + '-' + $property}: $value;
+  }
+}
+
+%no_select {
+  @include vendors(user-select, none, webkit);
+}
+
+@mixin with-vendors($mapping, $vendors...) {
+  @each $property, $value in $mapping {
+    #{$property}: $value;
+    
+    @each $vendor in $vendors {
+      #{'-' + $vendor + '-' + $property}: $value;
+    }
+  }
+}
+
+@function css_var($name, $fallback: null) {
+  @if ($fallback != null) {
+    @return var(--#{$name}, $fallback);
+  } @else {
+    @return var(--#{$name});
+  }
+}
+
+@mixin to_css_vars($mapping) {
+  @each $name, $value in $mapping {
+    #{'--' + $name}: $value;
+  }
+}
+
 @mixin when-is($selectors, $prefix: '', $suffix: '') {
   @each $selector in $selectors {
     @at-root #{$prefix + $selector + $suffix + &} {
@@ -61,42 +97,6 @@
 @mixin when-parent-not($selectors...) {
   @include when-is($selectors, 'not(', ') > ') {
     @content;
-  }
-}
-
-@mixin vendors($property, $value, $vendors...) {
-  #{$property}: $value;
-  
-  @each $vendor in $vendors {
-    #{'-' + $vendor + '-' + $property}: $value;
-  }
-}
-
-%no_select {
-  @include vendors(user-select, none, webkit);
-}
-
-@mixin to_css_vars($mapping) {
-  @each $name, $value in $mapping {
-    #{'--' + $name}: $value;
-  }
-}
-
-@mixin with-vendors($mapping, $vendors...) {
-  @each $property, $value in $mapping {
-    #{$property}: $value;
-    
-    @each $vendor in $vendors {
-      #{'-' + $vendor + '-' + $property}: $value;
-    }
-  }
-}
-
-@function css_var($name, $fallback: null) {
-  @if ($fallback != null) {
-    @return var(--#{$name}, $fallback);
-  } @else {
-    @return var(--#{$name});
   }
 }
 

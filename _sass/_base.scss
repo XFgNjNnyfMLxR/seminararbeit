@@ -38,15 +38,23 @@
   }
 }
 
-@mixin when-is($selectors) {
-  @at-root {
-    #{$selectors} {
+@mixin when-is($selectors...) {
+  @each $selector in $selectors {
+    @at-root #{$selector + &} {
       @content;
     }
   }
 }
 
-@mixin vendors($property, $value, $vendors) {
+@mixin when-class($selectors...) {
+  @each $selector in $selectors {
+    @at-root .#{$selector + &} {
+      @content;
+    }
+  }
+}
+
+@mixin vendors($property, $value, $vendors...) {
   #{$property}: $value;
   
   @each $vendor in $vendors {
@@ -64,7 +72,7 @@
   }
 }
 
-@mixin with-vendors($mapping, $vendors) {
+@mixin with-vendors($mapping, $vendors...) {
   @each $property, $value in $mapping {
     #{$property}: $value;
     

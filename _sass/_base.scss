@@ -68,6 +68,12 @@
   }
 }
 
+/*
+@function theme($name) {
+  @return css_var($name, map-get($theme-default, $name))
+}
+*/
+
 @mixin to_css_vars($mapping) {
   @each $name, $value in $mapping {
     #{'--' + $name}: $value;

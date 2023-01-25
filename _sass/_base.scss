@@ -54,6 +54,14 @@
   }
 }
 
+@mixin when-parent($selectors...) {
+  @each $selector in $selectors {
+    @at-root #{$selector + ' ' + &} {
+      @content;
+    }
+  }
+}
+
 @mixin vendors($property, $value, $vendors...) {
   #{$property}: $value;
   

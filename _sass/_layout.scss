@@ -79,7 +79,7 @@
     background-color: css_var(tab-highlight) !important;
   }
   
-  @include when-parent-not(p) {
+  @include when-parent(":not(p)") {
     box-shadow: 4px 3px 0 0 css_var(tab-highlight) !important;
   }
 }

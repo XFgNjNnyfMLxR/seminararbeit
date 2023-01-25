@@ -74,11 +74,13 @@
 :focus-visible {
   outline: none;
   transform: scale(1.05);
-  box-shadow: 4px 3px 0 0 css_var(tab-highlight) !important;
   
   @include when-parent(p) {
-    box-shadow: unset;
-    background: css_var(tab-highlight) !important;
+    background-color: css_var(tab-highlight) !important;
+  }
+  
+  @include when-parent(":not(p)") {
+    box-shadow: 4px 3px 0 0 css_var(tab-highlight) !important;
   }
 }
 

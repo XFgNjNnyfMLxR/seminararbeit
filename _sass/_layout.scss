@@ -195,21 +195,29 @@ h2 {
 
 h3 {
   @extend %heading;
+  
+  color: css_var(h3);
   font-size: 25px;
 }
 
 h4 {
   @extend %heading;
+  
+  color: css_var(h4);
   font-size: 18px;
 }
 
 h5 {
   @extend %heading;
+  
+  color: css_var(h5);
   font-size: 14px;
 }
 
 h6 {
   @extend %heading;
+  
+  color: css_var(h6);
   font-size: 10px;
 }
 
@@ -460,7 +468,7 @@ sup {
   }
 }
 
-div.footnotes {
+.footnotes {
   padding-top: 1.5rem;
   border-top: 2px solid grey;
   

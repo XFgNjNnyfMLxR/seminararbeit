@@ -56,7 +56,7 @@
 
 @mixin when-parent($selectors...) {
   @each $selector in $selectors {
-    @at-root #{$selector + ' ' + &} {
+    @at-root #{$selector + ' > ' + &} {
       @content;
     }
   }

@@ -38,27 +38,29 @@
   }
 }
 
-@mixin when-is($selectors...) {
+@mixin when-is($selectors, $prefix: '', $suffix: '') {
   @each $selector in $selectors {
-    @at-root #{$selector + &} {
+    @at-root #{$prefix + $selector + $suffix + &} {
       @content;
     }
   }
 }
 
-@mixin when-class($selectors...) {
-  @each $selector in $selectors {
-    @at-root #{'.' + $selector + &} {
-      @content;
-    }
+@mixin when-is-class($selectors...) {
+  @include when-is($selectors, '.') {
+    @content;
   }
 }
 
 @mixin when-parent($selectors...) {
-  @each $selector in $selectors {
-    @at-root #{$selector + ' > ' + &} {
-      @content;
-    }
+  @include when-is($selectors, '', ' > ') {
+    @content;
+  }
+}
+
+@mixin when-parent-not($selectors...) {
+  @include when-is($selectors, 'not(', ') > ') {
+    @content;
   }
 }
 

@@ -72,8 +72,9 @@
 }
 
 :focus-visible {
-  outline: css_var(tab-outline) solid max(3px, .12em);
-  outline-offset: max(1px, .04em);
+  outline: none;
+  transform: scale(1.05);
+  box-shadow: 4px 4px 3px 0 #a5d7f7;
 }
 
 html {
@@ -341,12 +342,6 @@ canvas {
 }
 
 @keyframes mark-highlight {
-  to {
-    background-position: 0 0;
-  }
-}
-
-@-webkit-keyframes mark-highlight {
   to {
     background-position: 0 0;
   }

@@ -95,7 +95,7 @@
 }
 
 @mixin when-parent-not($selectors...) {
-  @include when-is($selectors, 'not(', ') > ') {
+  @include when-is($selectors, ':not(', ') > ') {
     @content;
   }
 }

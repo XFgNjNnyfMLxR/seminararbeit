@@ -79,9 +79,23 @@
     background-color: css_var(tab-highlight) !important;
   }
   
-  @include when-parent(":not(p)") {
+  @include when-parent-not(p) {
     box-shadow: 4px 3px 0 0 css_var(tab-highlight) !important;
   }
+}
+
+@keyframes mark-highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+:target {
+  animation: 1.5s mark-highlight 1.5s 1 normal forwards;
+  
+  padding: 3px;
+  background-color: none;
+  background: linear-gradient(90deg, css_var(mark) 50%, rgba(255, 255, 255, 0) 50%) 100% 0 / 200% 100%;
 }
 
 html {
@@ -348,19 +362,9 @@ canvas {
   margin: 20px auto;
 }
 
-@keyframes mark-highlight {
-  to {
-    background-position: 0 0;
-  }
-}
-
 mark {
   @extend %text;
-  @include vendors(animation, 1.5s mark-highlight 1.5s 1 normal forwards, webkit);
-  
-  padding: 3px;
-  background-color: none;
-  background: linear-gradient(90deg, css_var(mark) 50%, rgba(255, 255, 255, 0) 50%) 100% 0 / 200% 100%;
+  @extend :target;
 }
 
 dl {

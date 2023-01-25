@@ -48,7 +48,7 @@
 
 @mixin when-class($selectors...) {
   @each $selector in $selectors {
-    @at-root .#{$selector + &} {
+    @at-root #{'.' + $selector + &} {
       @content;
     }
   }

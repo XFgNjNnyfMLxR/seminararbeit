@@ -1,13 +1,13 @@
 {% include_cached cache/side_buttons.liquid %}
 
 {% if page.previous_site %}
-<a href="{{ page.previous_site }}" class="side-button" id="left-button" tabindex="2">
+<a href="{{ page.previous_site }}" class="side-button" id="left-button">
   <img src="/assets/icons/left.svg" width="50" height="50" alt="Zurück">
 </a>
 {% endif %}
 
 {% if page.next_site %}
-<a href="{{ page.next_site }}" class="side-button" id="right-button" tabindex="1">
+<a href="{{ page.next_site }}" class="side-button" id="right-button">
   <img src="/assets/icons/right.svg" width="50" height="50" alt="Weiter">
 </a>
 {% endif %}

@@ -74,7 +74,7 @@
 :focus-visible {
   outline: none;
   transform: scale(1.05);
-  box-shadow: 4px 4px 3px 0 #a5d7f7;
+  box-shadow: 4px 3px 0 0 css_var(tab-highlight) !important;
 }
 
 html {

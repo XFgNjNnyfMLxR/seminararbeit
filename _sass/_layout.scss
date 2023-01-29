@@ -446,6 +446,7 @@ ul.task-list {
 
 pre {
   @extend %text_cursor;
+  
   padding: 16px;
   border-radius: 12px;
   background: css_var(code-block);

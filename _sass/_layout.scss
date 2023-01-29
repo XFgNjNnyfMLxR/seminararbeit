@@ -39,7 +39,7 @@
   line-height: 1.5;
   text-shadow: .25px .25px .5px rgba(0, 0, 0, .6);
   
-  @media (max-width: 768px) {
+  @include mobile {
     font-size: 16px;
   }
 }
@@ -117,7 +117,7 @@ body {
   background: css_var(page);
   box-shadow: 0 0 55px rgba(0, 0, 0, .1);
   
-  @media (max-width: 768px) {
+  @include mobile {
     padding: 10%;
     overflow-wrap: anywhere;
   }
@@ -145,7 +145,7 @@ body {
     }
   }
   
-  @media (max-width: 768px) {
+  @include mobile {
     display: none;
   }
 }
@@ -171,7 +171,7 @@ h1 {
   color: css_var(h1);
   font-size: 57px;
   
-  @media (max-width: 768px) {
+  @include mobile {
     font-size: 47px;
   }
 }

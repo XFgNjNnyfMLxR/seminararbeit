@@ -70,9 +70,15 @@
 
 /*
 @function theme($name) {
-  @return css_var($name, map-get($theme-default, $name))
+  @return css_var($name, map.get($theme-default, $name))
 }
 */
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
 
 @mixin to_css_vars($mapping) {
   @each $name, $value in $mapping {
@@ -80,6 +86,7 @@
   }
 }
 
+/*
 @mixin when-is($selectors, $prefix: '', $suffix: '') {
   @each $selector in $selectors {
     @at-root #{$prefix + $selector + $suffix + &} {
@@ -105,9 +112,10 @@
     @content;
   }
 }
+*/
 
 @function get($map, $key, $default: null) {
-  @if map.has-key($map, $key) {
+  @if (map.has-key($map, $key)) {
     @return map.get($map, $key);
   }
   @return $default;

@@ -27,6 +27,20 @@ $theme-default: (
   "download-button": #2B579A,
 );
 
+$theme-default-dark: (
+
+);
+
 :root, .theme-default {
   @include to_css_vars($theme-default);
+  
+  /*
+  &.dark {
+    @include to_css_vars($theme-default-dark);
+  }
+  */
+  
+  @media (prefers-color-scheme: dark) {
+    @include to_css_vars($theme-default-dark);
+  }
 }

@@ -12,7 +12,6 @@ sass:
     
 exclude:
 - LICENCE
-- *.md
 
 plugins:
 - jekyll-sitemap

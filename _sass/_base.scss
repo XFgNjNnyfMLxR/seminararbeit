@@ -80,6 +80,12 @@
   }
 }
 
+@mixin not-on-mobile {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
 @mixin to_css_vars($mapping) {
   @each $name, $value in $mapping {
     #{'--' + $name}: $value;

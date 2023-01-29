@@ -6,7 +6,6 @@ keywords: ["Seminararbeit", "hybride Kriegsführung", "Putin", "Propaganda", "De
 css_theme: default
 theme-color: "#7aaff3"
 permalink: pretty
-post_dirs: false
 
 sass:
     style: compressed

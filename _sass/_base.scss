@@ -50,6 +50,12 @@
   }
 }
 
+@mixin to_css_vars($mapping) {
+  @each $name, $value in $mapping {
+    #{'--' + $name}: $value;
+  }
+}
+
 @mixin vendors($property, $value, $vendors...) {
   #{$property}: $value;
   
@@ -69,12 +75,6 @@
     @each $vendor in $vendors {
       #{'-' + $vendor + '-' + $property}: $value;
     }
-  }
-}
-
-@mixin to_css_vars($mapping) {
-  @each $name, $value in $mapping {
-    #{'--' + $name}: $value;
   }
 }
 

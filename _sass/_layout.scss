@@ -16,14 +16,29 @@
         filter: invert(57%) sepia(49%) saturate(3963%) hue-rotate(179deg) brightness(87%) contrast(88%);
         float: right;
         margin-left: .25em;
-        margin-top: -.125em;
+        margin-top: -.05em;
         
         opacity: 0;
         visibility: hidden;
         transition: visibility .3s linear, opacity .3s linear;
       }
       
-       &:hover {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        
+        transform: scaleX(0);
+        transform-origin: top left;
+        transition: transform .3s ease;
+      }
+      
+      &:hover {
         &::after {
           opacity: 1;
           visibility: visible;
@@ -84,18 +99,10 @@
   }
 }
 
-@keyframes mark-highlight {
-  to {
-    background-position: 0 0;
-  }
-}
-
 :target {
-  animation: 1.5s mark-highlight 1.5s 1 normal forwards;
-  
-  padding: 3px;
-  background-color: none;
-  background: linear-gradient(90deg, css_var(mark) 50%, rgba(255, 255, 255, 0) 50%) 100% 0 / 200% 100%;
+  &::before {
+    transform: scaleX(1);
+  }
 }
 
 html {
@@ -370,9 +377,19 @@ canvas {
   margin: 20px auto;
 }
 
+@keyframes mark-highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
 mark {
   @extend %text;
-  @extend :target;
+  animation: 1.5s mark-highlight 1.5s 1 normal forwards;
+  
+  padding: 3px;
+  background-color: none;
+  background: linear-gradient(90deg, css_var(mark) 50%, rgba(255, 255, 255, 0) 50%) 100% 0 / 200% 100%;
 }
 
 dl {

@@ -16,11 +16,6 @@
   text-decoration: none;
 }
 
-@mixin size($size) {
-  width: $size;
-  height: $size;
-}
-
 @mixin on-event {
   &:hover,
   &:active,
@@ -35,6 +30,23 @@
   &:active,
   &:focus {
       @content;
+  }
+}
+
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin not-on-mobile {
+  @media (min-width: 768px) {
+    @content;
   }
 }
 
@@ -60,6 +72,12 @@
   }
 }
 
+@mixin to_css_vars($mapping) {
+  @each $name, $value in $mapping {
+    #{'--' + $name}: $value;
+  }
+}
+
 @function css_var($name, $fallback: null) {
   @if ($fallback != null) {
     @return var(--#{$name}, $fallback);
@@ -71,52 +89,6 @@
 /*
 @function theme($name) {
   @return css_var($name, map-get($theme-default, $name))
-}
-*/
-
-@mixin mobile {
-  @media (max-width: 768px) {
-    @content;
-  }
-}
-
-@mixin not-on-mobile {
-  @media (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin to_css_vars($mapping) {
-  @each $name, $value in $mapping {
-    #{'--' + $name}: $value;
-  }
-}
-
-/*
-@mixin when-is($selectors, $prefix: '', $suffix: '') {
-  @each $selector in $selectors {
-    @at-root #{$prefix + $selector + $suffix + &} {
-      @content;
-    }
-  }
-}
-
-@mixin when-is-class($selectors...) {
-  @include when-is($selectors, '.') {
-    @content;
-  }
-}
-
-@mixin when-parent($selectors...) {
-  @include when-is($selectors, '', ' > ') {
-    @content;
-  }
-}
-
-@mixin when-parent-not($selectors...) {
-  @include when-is($selectors, ':not(', ') > ') {
-    @content;
-  }
 }
 */
 

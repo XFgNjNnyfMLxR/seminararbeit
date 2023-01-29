@@ -63,6 +63,10 @@
   letter-spacing: .15px;
 }
 
+:target {
+
+}
+
 ::selection {
   background: css_var(selection);
 }
@@ -75,17 +79,13 @@
   outline: none;
   transform: scale(1.05);
   
-  @include when-parent(p) {
+  p > & {
     background-color: css_var(tab-highlight) !important;
   }
   
-  @include when-parent-not(p) {
+  :not(p) > & {
     box-shadow: 4px 3px 0 0 css_var(tab-highlight) !important;
   }
-}
-
-:target {
-
 }
 
 html {

@@ -10,6 +10,10 @@ permalink: pretty
 sass:
     style: compressed
     
+exclude:
+- LICENCE
+- *.md
+
 plugins:
 - jekyll-sitemap
 - jekyll-redirect-from

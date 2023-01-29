@@ -46,6 +46,7 @@
 
 %grey-text {
   @extend %text;
+  
   color: css_var(grey-text);
 }
 
@@ -99,6 +100,7 @@ html {
 
 body {
   @extend %full_size;
+  
   -webkit-tap-highlight-color: #0000;
 }
 

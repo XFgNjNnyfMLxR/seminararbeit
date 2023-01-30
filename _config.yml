@@ -11,10 +11,6 @@ sass: {style: compressed}
     
 exclude:
 - LICENCE
-- README.md
-
-keep_files:
-- README.md
 
 plugins:
 - jekyll-sitemap

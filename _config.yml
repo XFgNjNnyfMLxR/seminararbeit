@@ -12,6 +12,9 @@ sass: {style: compressed}
 optional_front_matter:
   remove_originals: true
   
+readme_index:
+  remove_originals: true
+  
 exclude:
 - LICENCE
 

@@ -7,8 +7,7 @@ css_theme: default
 theme-color: "#7aaff3"
 
 permalink: pretty
-sass: 
-  style: compressed
+sass: {style: compressed}
 
 optional_front_matter:
   remove_originals: true

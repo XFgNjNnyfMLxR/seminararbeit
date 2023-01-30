@@ -5,7 +5,6 @@ description: |-
 keywords: ["Seminararbeit", "hybride Kriegsführung", "Putin", "Propaganda", "Deutschland", "Demokratie", "Putins Kriegsführung"]
 css_theme: default
 theme-color: "#7aaff3"
-
 permalink: pretty
 sass: {style: compressed}
 

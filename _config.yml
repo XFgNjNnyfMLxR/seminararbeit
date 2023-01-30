@@ -8,13 +8,10 @@ theme-color: "#7aaff3"
 
 permalink: pretty
 sass: {style: compressed}
-
-collections:
-  hidden_posts:
-    output: false
     
 exclude:
 - LICENCE
+- README.md
 
 plugins:
 - jekyll-sitemap
